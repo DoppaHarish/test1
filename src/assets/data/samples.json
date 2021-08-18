@@ -1,0 +1,9 @@
+[
+    {"id":1,"prodName":"Angular Mug","prodimage":"/assets/images/mugsSq.jpg","brand":"Angular", "price":10},
+    {"id":2,"prodName":"Angular tshirt","prodimage":"/assets/images/bottlesqu.jpg","brand":"Angular","price":10},
+    {"id":3,"prodName":"Angular bottle","prodimage":"/assets/images/tshirtsqu.jpg","brand":"Angular","price":10},
+   
+    {"id":4,"prodName":".net mug","prodimage":"/assets/images/mugsSq.jpg","brand":".net","price":10},
+    {"id":5,"prodName":".net tshirt","prodimage":"/assets/images/bottlesqu.jpg","brand":".net","price":10},
+    {"id":6,"prodName":".net bottle","prodimage":"/assets/images/tshirtsqu.jpg","brand":".net","price":10}
+]
