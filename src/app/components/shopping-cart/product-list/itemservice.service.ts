@@ -11,7 +11,6 @@ export class ItemserviceService {
 
   constructor(private _http:HttpClient) { }
   private _baseUrl = '../assets/data/samples.json';
-  public a = [];
   getitems(): Observable<IitemList[]> {
     debugger
     return this._http.get<IitemList[]>(this._baseUrl);

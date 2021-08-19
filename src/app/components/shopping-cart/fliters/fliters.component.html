@@ -1,23 +1,30 @@
-<nav class="navbar navbar-dark bg-primary">
-  <div class="row">
-    <div class="col-md-8">
-        <div class="dropdown">
-            <select class="btn btn-primary dropdown-toggle" data-toggle="dropdown" formControlName="name">
-              <option disabled selected>Choose brand </option>
-              <option *ngFor="let b of Brnads">$ {{b}}</option>
-            </select>
+<nav class="navbar" style="background-color:#00e699">
+  <div class="container">
+
+      <div class="row">
+          <div class="col-md-8">
+              <div class="dropdown">
+                  <select class="btn btn-primary" data-toggle="dropdown" >
+                    <option disabled selected>Choose brand </option>
+                    <option *ngFor="let b of Brnads">{{b}}</option>
+                  </select>
+                </div>
           </div>
-    </div>
-    <div class="col-md-4">
-        <div class="dropdown">
-          <div class="dropdown">
-            <select class="btn btn-primary dropdown-toggle" data-toggle="dropdown" formControlName="name">
-              <option disabled selected>price range </option>
-              <option *ngFor="let p of price">{{p}}</option>
-            </select>
-          </div>
-          </div>
-      </div>
+          <div class="col-md-4">
+              <div class="dropdown">
+                <div class="dropdown">
+                  <select class="btn btn-primary dropdown-toggle" data-toggle="dropdown" formControlName="name">
+                    <option disabled selected>price range </option>
+                    <option *ngFor="let p of price">$ {{p}}</option>
+                  </select>
+                </div>
+                </div>
+            </div>
+        </div>
   </div>
+
+
+
+
 
   </nav>
