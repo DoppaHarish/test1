@@ -1,30 +1,36 @@
-<nav class="navbar" style="background-color:#00e699;width:102%">
-  <div class="container">
 
+
+
+
+<nav class="navbar" style="background-color:#00A69C;width:102%">
+  <div class="container">
       <div class="row">
-          <div class="col-md-8">
-              <div class="dropdown">
-                  <select class="btn btn-primary" data-toggle="dropdown" >
-                    <option disabled selected>Choose brand </option>
-                    <option *ngFor="let b of Brnads">{{b}}</option>
-                  </select>
-                </div>
+          <div class="col-md-6">
+              <mat-form-field appearance="fill">
+                  <mat-label>Brand</mat-label>
+                  <select matNativeControl required>
+                    <option value="volvo">All</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select> 
+                </mat-form-field>
           </div>
-          <div class="col-md-4">
-              <div class="dropdown">
-                <div class="dropdown">
-                  <select class="btn btn-primary dropdown-toggle" data-toggle="dropdown" formControlName="name">
-                    <option disabled selected>price range </option>
-                    <option *ngFor="let p of price">$ {{p}}</option>
-                  </select>
-                </div>
-                </div>
+          <div class="col-md-4" >
+              <mat-form-field appearance="fill">
+                  <mat-label> choose </mat-label>
+                  <select matNativeControl required>
+                    <option value="volvo">All</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select> 
+                </mat-form-field>
             </div>
         </div>
   </div>
+</nav>
 
-
-
-
-
-  </nav>
+<nav id="navPhone" style="background-color:#0FF040;width:102%;display:none">
+  <h1>Fliters</h1>
+</nav>

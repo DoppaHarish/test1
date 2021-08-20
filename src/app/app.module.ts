@@ -12,6 +12,11 @@ import { ProductListComponent } from './components/shopping-cart/product-list/pr
 import { HttpClientModule } from '@angular/common/http'; 
 import { ItemserviceService }  from './components/shopping-cart/product-list/itemservice.service';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSelectModule} from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
+import {MatInputModule} from '@angular/material/input';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +30,11 @@ import { ItemserviceService }  from './components/shopping-cart/product-list/ite
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [ItemserviceService],
   bootstrap: [AppComponent]

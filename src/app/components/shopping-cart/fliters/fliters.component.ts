@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-fliters',
   templateUrl: './fliters.component.html',
-  styleUrls: ['./fliters.component.sass']
+  styleUrls: ['./Fliters.css']
 })
 export class FlitersComponent implements OnInit {
 
