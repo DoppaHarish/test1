@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
 
   ImagePath: string;
   constructor() {
-    this.ImagePath = '/assets/images/banner.png'
+    this.ImagePath = '../assets/images/banner.png'
    }
 
   ngOnInit(): void {
