@@ -14,14 +14,20 @@
     </div>
     <div class="row">
         <div class="col-md-4"  *ngFor="let x of shppoingLists">
-            <div class="card mb-4 box-shadow">
+            <div class="mb-4">
                 <img class="card-img-top" [src] ="x.prodimage" alt="" style="height: 225px; width: 100%; display: block;"  data-holder-rendered="true"> 
-                <div class="row">
-                        <div class="col-md-6"> <p class="card-text">{{x.prodName}}</p></div>
-                        <div class="col-md-6"> <small class="text-muted">${{x.price}}</small></div>
+                    <i class="fa fa-plus" id="Addicon" style="font-size:48px;color:green;margin-left:45%;display:none"></i> 
+              
+                <br/>
+                <div style="text-align: center;">
+                <button type="button" id="Addbutton" class="btn btn-success" style="width: 250px;">[ Add to cart ]</button>
                 </div>
                 <br>
-                <button type="button" class="btn btn-success">Add to cart</button>
+                        <div  style="color:black;text-align:center;font-weight: 1000"> 
+                                <p class="card-text" >{{x.prodName}}</p></div>
+                        <div style="color:black;text-align:center;font-weight:1000">
+                                <p class="card-text">${{x.price}}</p> 
+                        </div>
             </div>  
         </div>
     </div>

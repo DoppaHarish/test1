@@ -10,7 +10,7 @@ import { IitemList } from './itemModel';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.sass']
+  styleUrls: ['./product.css']
 })
 export class ProductListComponent implements OnInit {
 
